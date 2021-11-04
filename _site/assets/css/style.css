@@ -52,8 +52,8 @@ a {
 
 abbr[title] {
     border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted
+    text-decoration: none;
+    text-decoration: none
 }
 
 b,
@@ -814,7 +814,7 @@ dd {
 
 .header {
     background-color: #467fc9;
-    background-image: url();
+    background-image: url(../img/background.jpeg);
     background-size: cover;
     background-position: 50%;
     color: #fff;
@@ -840,7 +840,8 @@ dd {
 
 .header h1 a {
     color: #fff;
-    text-decoration: none
+    text-decoration: none;
+    /* text-shadow: -2px 0 #467fc9, 0 2px #467fc9, 2px 0 #467fc9, 0 -2px #467fc9; */
 }
 
 .post .postTitle {
@@ -1076,7 +1077,7 @@ dd {
 }
 
 .posts li a:hover {
-    text-decoration: underline
+    text-decoration: none
 }
 
 .posts li .date {
