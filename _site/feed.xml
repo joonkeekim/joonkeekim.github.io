@@ -5,9 +5,31 @@
     <description>Joonkee's Blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Nov 2021 02:27:14 +0900</pubDate>
-    <lastBuildDate>Thu, 04 Nov 2021 02:27:14 +0900</lastBuildDate>
+    <pubDate>Thu, 04 Nov 2021 17:02:56 +0900</pubDate>
+    <lastBuildDate>Thu, 04 Nov 2021 17:02:56 +0900</lastBuildDate>
     <generator>Jekyll v4.1.1</generator><item>
+        <title>First Post</title>
+        <description>&lt;p&gt;첫번째 포스팅이랄까나? 제대로 올라가나 test&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;gksk&lt;/li&gt;
+  &lt;li&gt;gkgk&lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;ddd&quot;&gt;ddd&lt;/h2&gt;
+    &lt;h3 id=&quot;ddd-1&quot;&gt;ddd&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description><description>&lt;p&gt;첫번째 포스팅이랄까나? 제대로 올라가나 test&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;gksk&lt;/li&gt;
+  &lt;li&gt;gkgk&lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;ddd&quot;&gt;ddd&lt;/h2&gt;
+    &lt;h3 id=&quot;ddd-1&quot;&gt;ddd&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description><pubDate>Thu, 04 Nov 2021 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/blog/first-post/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/first-post/</guid></item><item>
         <title>Example Post Formatting</title>
         <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;C&lt;/span&gt;urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
 
