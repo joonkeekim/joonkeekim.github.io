@@ -1090,22 +1090,7 @@ dd {
     margin: 0 0 .5em
 }
 
-@media (prefers-color-scheme:light) {
-    body {
-        background-color: #000
-    }
-    .posts li .date,
-    body {
-        color: #fff
-    }
-    .postNav {
-        border-top: 1px solid #1a1a1a;
-        border-bottom: 1px solid #1a1a1a
-    }
-    .footer .container {
-        border-top-color: #1a1a1a
-    }
-}
+
 
 @media only screen and (min-width:800px) {
     body {
@@ -1293,16 +1278,6 @@ dd {
     }
 }
 
-@media only screen and (min-width:800px) and (prefers-color-scheme:light) {
-    body {
-        background-color: #000;
-        color: #fff
-    }
-    .content:after,
-    .post .featuredImage:before {
-        background: #000
-    }
-}
 
 @media only screen and (min-width:1200px) {
     body {
