@@ -2,6 +2,7 @@ title: Joonkee's Blog
 description: Joonkee's Blog
 
 url: https://joonkeekim.github.io/
+baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -15,7 +16,7 @@ gems:
  - jekyll-paginate
  - jekyll-archives
  - jekyll-time-to-read
-paginate: 5
+paginate: 10
 # paginate: 10
 
 navigation:
