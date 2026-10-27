@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joonkee Kim</title>
+  <meta name="description" content="Joonkee Kim, LLM research engineer at Upstage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --link: #1772d0;
+      --link-hover: #f09228;
+      --accent: #c0392b;
+      --rule: #e5e5e5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16181c;
+        --text: #e4e4e4;
+        --muted: #9a9a9a;
+        --link: #6fb1ff;
+        --link-hover: #f5a85a;
+        --accent: #ff7a6b;
+        --rule: #2e3036;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.55;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover, a:focus { color: var(--link-hover); }
+
+    main { max-width: 800px; margin: 0 auto; padding: 48px 16px 64px; }
+
+    /* Header */
+    .name { font-size: 32px; text-align: center; margin: 0 0 20px; font-weight: 400; }
+    .bio p { margin: 0 0 12px; }
+    .links { text-align: center; margin-top: 18px; }
+    .links a { white-space: nowrap; }
+    .links .sep { color: var(--muted); margin: 0 6px; }
+
+    /* Sections */
+    h2 { font-size: 22px; font-weight: 400; margin: 44px 0 12px; }
+    .section-note { margin: 0 0 16px; color: var(--muted); font-size: 14px; }
+
+    /* Experience */
+    .exp { display: flex; justify-content: space-between; gap: 16px; padding: 8px 0; }
+    .exp .role { font-weight: 700; }
+    .exp .detail { color: var(--muted); font-size: 14px; }
+    .exp .date { color: var(--muted); white-space: nowrap; font-size: 14px; }
+
+    /* Publications */
+    .pub { padding: 10px 0; }
+    .pub .title { font-weight: 700; }
+    .pub .authors { margin-top: 2px; }
+    .pub .me { font-weight: 700; }
+    .pub .venue { font-style: italic; }
+    .pub .badge { color: var(--accent); font-weight: 700; font-style: normal; }
+
+    .tr { padding: 4px 0; }
+
+    ul.plain { list-style: none; padding: 0; margin: 0; }
+    ul.plain li { display: flex; justify-content: space-between; gap: 16px; padding: 4px 0; }
+    ul.plain .date { color: var(--muted); white-space: nowrap; font-size: 14px; }
+
+    footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--rule);
+             text-align: right; font-size: 13px; color: var(--muted); }
+
+    @media (max-width: 600px) {
+      main { padding-top: 32px; }
+      .exp, ul.plain li { flex-direction: column; gap: 0; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <!-- Header -->
+  <h1 class="name">Joonkee Kim</h1>
+  <!-- To add a photo later: put profile.jpg next to this file and add
+       <img src="profile.jpg" alt="Joonkee Kim"> here. -->
+  <div class="bio">
+    <p>
+      I'm an LLM research engineer at <a href="https://www.upstage.ai/">Upstage</a>, where I work on the
+      <a href="https://arxiv.org/abs/2607.20062">Solar</a> LLM series.
+      Before that, I was at <a href="https://www.lgresearch.ai/">LG AI Research</a> (2024&ndash;2026),
+      where I contributed to the <a href="https://arxiv.org/abs/2507.11407">EXAONE</a> models,
+      from EXAONE 3.0 to EXAONE 4.5 and K-EXAONE.
+    </p>
+    <p>
+      I received my M.S. from the Graduate School of AI at <a href="https://gsai.kaist.ac.kr/">KAIST</a>,
+      advised by Prof. Se-Young Yun, and my B.S. in Computer Science and Bio-Mechatronics from
+      Sungkyunkwan University. My research focuses on LLM post-training and reinforcement learning.
+    </p>
+  </div>
+  <div class="links">
+    <a href="mailto:joonkee0701@gmail.com">Email</a><span class="sep">/</span>
+    <a href="cv.pdf">CV</a><span class="sep">/</span>
+    <a href="https://scholar.google.com/citations?user=LL9Yj54AAAAJ">Scholar</a><span class="sep">/</span>
+    <a href="https://www.linkedin.com/in/joonkee-kim-5171831b3/">LinkedIn</a><span class="sep">/</span>
+    <a href="https://github.com/joonkeekim">GitHub</a>
+  </div>
+
+  <!-- Experience -->
+  <h2>Experience</h2>
+  <div class="exp">
+    <div>
+      <div class="role">Upstage</div>
+      <div class="detail">LLM Research Engineer &middot; Solar LLM</div>
+    </div>
+    <div class="date">Apr 2026 &ndash; Present</div>
+  </div>
+  <div class="exp">
+    <div>
+      <div class="role">LG AI Research</div>
+      <div class="detail">LLM Research Engineer &middot; EXAONE</div>
+    </div>
+    <div class="date">Feb 2024 &ndash; Apr 2026</div>
+  </div>
+  <div class="exp">
+    <div>
+      <div class="role">KAIST</div>
+      <div class="detail">M.S., Graduate School of AI &middot; Advisor: Prof. Se-Young Yun</div>
+    </div>
+    <div class="date">Mar 2022 &ndash; Feb 2024</div>
+  </div>
+  <div class="exp">
+    <div>
+      <div class="role">Sungkyunkwan University</div>
+      <div class="detail">B.S., Computer Science and Bio-Mechatronics &middot; Summa Cum Laude</div>
+    </div>
+    <div class="date">Mar 2015 &ndash; Feb 2022</div>
+  </div>
+
+  <!-- Publications -->
+  <h2>Publications</h2>
+  <p class="section-note">* equal contribution.</p>
+
+  <div class="pub">
+    <a class="title" href="https://openreview.net/pdf/cc3c9f69a134e37d517c2b16192dc30604753212.pdf">Learning to Comply: Workflow-Grounded Environment Generation for Training Procedurally Compliant Agents</a>
+    <div class="authors">Seungwon Lim, Minu Kim, Seokhee Hong, Jinyoung Yeo, Se-Young Yun, <span class="me">Joonkee Kim</span></div>
+    <div class="venue">COLM 2026</div>
+  </div>
+
+  <div class="pub">
+    <a class="title" href="https://arxiv.org/abs/2607.04412">LLM-as-a-Tutor: Policy-Aware Prompt Adaptation for Non-Verifiable RL</a>
+    <div class="authors">Yujin Kim*, Namgyu Ho*, Sangmin Hwang*, <span class="me">Joonkee Kim</span>, Yongjin Yang, Sangmin Bae, Seungone Kim, Jaehun Jung, Se-Young Yun, Hwanjun Song</div>
+    <div class="venue">NeurIPS 2026</div>
+  </div>
+
+  <div class="pub">
+    <a class="title" href="https://arxiv.org/abs/2505.16322">AdaSTaR: Adaptive Data Sampling for Training Self-Taught Reasoners</a>
+    <div class="authors">Woosung Koh, Wonbeen Oh, Jaein Jang, MinHyung Lee, Hyeongjin Kim, Ah Yeon Kim, <span class="me">Joonkee Kim</span>, Junghyun Lee, Taehyeon Kim, Se-Young Yun</div>
+    <div class="venue">NeurIPS 2025</div>
+  </div>
+
+  <div class="pub">
+    <a class="title" href="https://arxiv.org/abs/2311.00233">Instructive Decoding: Instruction-Tuned Large Language Models are Self-Refiner from Noisy Instructions</a>
+    <div class="authors">Taehyeon Kim*, <span class="me">Joonkee Kim*</span>, Gihun Lee*, Se-Young Yun</div>
+    <div class="venue">ICLR 2024 &nbsp;<span class="badge">Spotlight</span></div>
+  </div>
+
+  <div class="pub">
+    <a class="title" href="https://arxiv.org/abs/2401.16979">Re3val: Reinforced and Reranked Generative Retrieval</a>
+    <div class="authors">EuiYul Song, Sangryul Kim, Haeju Lee, <span class="me">Joonkee Kim</span>, James Thorne</div>
+    <div class="venue">Findings of EACL 2024</div>
+  </div>
+
+  <div class="pub">
+    <a class="title" href="https://arxiv.org/abs/2306.10711">PLASTIC: Improving Input and Label Plasticity for Sample Efficient Reinforcement Learning</a>
+    <div class="authors">Hojoon Lee*, Hanseul Cho*, Hyunseung Kim*, Daehoon Gwak, <span class="me">Joonkee Kim</span>, Jaegul Choo, Se-Young Yun, Chulhee Yun</div>
+    <div class="venue">NeurIPS 2023</div>
+  </div>
+
+  <div class="pub">
+    <a class="title" href="https://arxiv.org/abs/2311.00321">HARE: Explainable Hate Speech Detection with Step-by-Step Reasoning</a>
+    <div class="authors">Yongjin Yang*, <span class="me">Joonkee Kim*</span>, Yunjin Kim*, Namgyu Ho, James Thorne, Se-Young Yun</div>
+    <div class="venue">Findings of EMNLP 2023</div>
+  </div>
+
+  <div class="pub">
+    <a class="title" href="https://arxiv.org/abs/2303.01768">Toward Risk-Based Optimistic Exploration for Cooperative Multi-Agent Reinforcement Learning</a>
+    <div class="authors">Jihwan Oh*, <span class="me">Joonkee Kim*</span>, Minchan Jeong, Se-Young Yun</div>
+    <div class="venue">AAMAS 2023</div>
+  </div>
+
+  <div class="pub">
+    <a class="title" href="https://doi.org/10.1038/s41592-024-02233-6">The Multimodality Cell Segmentation Challenge: Toward Universal Solutions</a>
+    <div class="authors">Jun Ma, Ronald Xie, Shamini Ayyadhury, Cheng Ge, Anubha Gupta, Ritu Gupta, Song Gu, Yao Zhang, Gihun Lee, <span class="me">Joonkee Kim</span>, et al.</div>
+    <div class="venue">Nature Methods 2024</div>
+  </div>
+
+  <div class="pub">
+    <a class="title" href="https://ieeexplore.ieee.org/document/10099458">The StarCraft Multi-Agent Exploration Challenges: Learning Multi-Stage Tasks and Environmental Factors Without Precise Reward Functions</a>
+    <div class="authors">Mingyu Kim*, Jihwan Oh*, Yongsik Lee, <span class="me">Joonkee Kim</span>, Seonghwan Kim, Song Chong, Se-Young Yun</div>
+    <div class="venue">IEEE Access 2023</div>
+  </div>
+
+  <div class="pub">
+    <a class="title" href="https://proceedings.mlr.press/v212/lee23a.html">MEDIAR: Harmony of Data-Centric and Model-Centric for Multi-Modality Microscopy</a>
+    <div class="authors">Gihun Lee*, SangMook Kim*, <span class="me">Joonkee Kim*</span>, Se-Young Yun</div>
+    <div class="venue">NeurIPS 2022 Competition &nbsp;<span class="badge">1st Place</span></div>
+  </div>
+
+  <!-- Technical reports -->
+  <h2>Technical Reports</h2>
+  <p class="section-note">As a contributor.</p>
+  <div class="tr"><a href="https://arxiv.org/abs/2607.20062">Solar Open 2 Technical Report</a> &middot; Upstage, 2026</div>
+  <div class="tr"><a href="https://arxiv.org/abs/2604.08644">EXAONE 4.5 Technical Report</a> &middot; LG AI Research, 2026</div>
+  <div class="tr"><a href="https://arxiv.org/abs/2601.01739">K-EXAONE Technical Report</a> &middot; LG AI Research, 2026</div>
+  <div class="tr"><a href="https://arxiv.org/abs/2507.11407">EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and Reasoning Modes</a> &middot; LG AI Research, 2025</div>
+  <div class="tr"><a href="https://arxiv.org/abs/2503.12524">EXAONE Deep: Reasoning Enhanced Language Models</a> &middot; LG AI Research, 2025</div>
+  <div class="tr"><a href="https://arxiv.org/abs/2412.04862">EXAONE 3.5: Series of Large Language Models for Real-world Use Cases</a> &middot; LG AI Research, 2024</div>
+  <div class="tr"><a href="https://arxiv.org/abs/2408.03541">EXAONE 3.0 7.8B Instruction Tuned Language Model</a> &middot; LG AI Research, 2024</div>
+
+  <!-- Awards -->
+  <h2>Awards</h2>
+  <ul class="plain">
+    <li><span>Student Scholarship, AAMAS 2023</span><span class="date">2023</span></li>
+    <li><span>1st Place, NeurIPS 2022 Cell Segmentation Challenge</span><span class="date">2022</span></li>
+    <li><span>6th Place, 5th AI Grand Challenge (Round 2), IITP</span><span class="date">2021</span></li>
+  </ul>
+
+  <footer>
+    Design adapted from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's website</a>.
+  </footer>
+
+</main>
+</body>
+</html>
